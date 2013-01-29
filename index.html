@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>foo</title>
+<script src="http://www.java.com/js/deployJava.js"></script>
+</head>
+<body>
+Foo!!
+
+<script type="text/javascript">
+
+    var attributes = {
+        id:'deliveryApplet',
+        code: 'HelloWorldApp',
+        // note: I tried including "codebase: '/Content/applets'", but nothing new happened
+        width: 300,
+        height: 50
+    };
+    var parameters = {
+        jnlp_href: 'datadelivery.jnlp'
+    };
+    deployJava.runApplet(attributes, parameters, '1.6');
+
+</script>
+</body>
+</html>
